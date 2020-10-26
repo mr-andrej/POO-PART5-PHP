@@ -26,15 +26,15 @@ class Bicycle extends Vehicle
      */
     public $hasLuggageRack = false;
 
-    public function switchOn(): boolean
+    public function switchOn(): bool
     {
         if ($this->currentSpeed>10)
             return true;
-        else
-            return false;
+
+        return false;
     }
 
-    public function switchOff(): boolean
+    public function switchOff(): bool
     {
         return false;
     }

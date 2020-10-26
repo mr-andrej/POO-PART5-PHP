@@ -2,7 +2,11 @@
 
 // vehicle.php
 
-abstract class Vehicle
+require_once 'LightableInterface.php';
+
+
+
+abstract class Vehicle implements LightableInterface
 {
     /**
      * @var string

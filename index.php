@@ -12,6 +12,7 @@ require_once 'PedestrianWay.php';
 require_once 'ResidentialWay.php';
 
 $BMW = new Car("pink", "5", "diesel");
+
 try {
     echo "Trying to start my car!<br>";
     $BMW->start();
@@ -21,3 +22,11 @@ try {
 } finally {
     echo "My car drives like a donut";
 }
+
+$testing = new Bicycle("red", 1);
+
+echo "<br>";
+ if ($testing->switchOn() == true)
+     echo "True";
+ else
+     echo "False";
